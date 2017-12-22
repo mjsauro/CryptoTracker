@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60;url=index.html">
     <title></title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,6 +22,7 @@
                 <div class="panel-heading">Current Bitcoin Price as of {{CurrentDate | date:'medium' }}</div>
                 <div class="panel-body">
                     <p class="lead">Price in Dollars: {{CurrentRate | currency:"USD $":0}} </p>
+                    <div><button class="btn btn-primary" text="Refresh" onClick="window.location.href=window.location.href">Refresh</button></div>
                 </div>
             </div>
         </div>
